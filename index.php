@@ -18,7 +18,7 @@
     $div = explode('.', $file_name);
     $file_ext = strtolower(end($div));
     $unique_image = substr(md5(time()), 0, 10).'.'.$file_ext;
-    $uploaded_image = "upload/".$unique_image;
+    $uploaded_image = "img/".$unique_image;
 
     
     move_uploaded_file($file_temp, $uploaded_image);
